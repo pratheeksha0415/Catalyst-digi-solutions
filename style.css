@@ -1,0 +1,216 @@
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f6;
+  color: #1f2d2b;
+  overflow-x: hidden;
+}
+
+/* ---------- HEADER (OVER HERO) ---------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 22px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+nav a {
+  margin-left: 34px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  min-height: 100vh;
+  padding: 160px 80px 80px;
+  background: linear-gradient(120deg, #2c7f7a, #9bcac3);
+  color: white;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 620px;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: white;
+  color: #2c7f7a;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* ---------- GHOST CARDS (HORIZONTAL) ---------- */
+.ghost-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.ghost-card {
+  text-decoration: none;
+  color: inherit;
+  padding: 36px 34px;
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+
+  transition: background 0.3s ease,
+              box-shadow 0.3s ease,
+              transform 0.3s ease;
+}
+
+.ghost-card h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.ghost-card p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+
+.ghost-card:hover {
+  background: #ffffff;
+  color: #1f2d2b;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  cursor: pointer;
+}
+
+.ghost-card:hover p {
+  color: #6a7f7c;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #ffffff;
+  text-align: center;
+  padding: 40px;
+  font-size: 13px;
+  color: #6f8784;
+  border-top: 1px solid #eef1f1;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  nav a {
+    margin-left: 18px;
+  }
+
+  .hero {
+    padding: 140px 30px 60px;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .ghost-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+/* ---------- NAVBAR COLOR (ALL PAGES – SAME COLOR FAMILY) ---------- */
+
+/* Home */
+.home-page header {
+  background: #2c7f7a;
+}
+
+/* About */
+.about-page header {
+  background: #256e69;
+}
+
+/* Services */
+.services-page header {
+  background: #1f5f5b;
+}
+
+/* Gallery */
+.gallery-page header {
+  background: #3b8f8a;
+}
+
+/* Contact */
+.contact-page header {
+  background: #174d4a;
+}
+
+/* Quote */
+.quote-page header {
+  background: #12403d;
+}
+
+/* Shadow for all pages */
+header {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+/* ---------- HOME HERO BACKGROUND IMAGE ---------- */
+.home-page .hero {
+  background:
+    linear-gradient(
+      120deg,
+      rgba(44, 127, 122, 0.85),
+      rgba(155, 202, 195, 0.85)
+    ),
+    url("images/printerimage1.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
